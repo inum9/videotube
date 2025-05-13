@@ -296,6 +296,10 @@ const updateUserAvatar = asyncHandler(async(req, res) => {
     }
 
     //TODO: delete old image - assignment
+       if (req.user.avatar) {
+        const publicId = req.user.avatar.split('/').pop().split('.')[0];
+        await deleteFromCloudinary(publicId); 
+    }
 
     const avatar = await uploadOnCloudinary(avatarLocalPath)
 
