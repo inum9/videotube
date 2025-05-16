@@ -19,6 +19,9 @@ app.use(cookieParser());
  import route from "./src/routes/user.routes.js";
 import commentRouter from "./src/routes/comment.routes.js"
 import likeRouter from "./src/routes/like.routes.js"
+import subRouter from "../managment system/src/routes/subscriber.routes.js";
+import playRouter from "./src/routes/playlist.orutes.js"
+import videoRouter from "./src/routes/video.routes.js";
 // import healthcheckRouter from "./routes/healthcheck.routes.js"
 // import tweetRouter from "./routes/tweet.routes.js"
 // import subscriptionRouter from "./routes/subscription.routes.js"
@@ -33,6 +36,10 @@ import likeRouter from "./src/routes/like.routes.js"
  app.use("/api/v1/users", route);
  app.use("/api/v1/comments",commentRouter);
  app.use("/api/v1/like",likeRouter);
+ app.use("/api/v1/like",subRouter);
+ app.use("/api/v1/like",playRouter);
+ app.use("/api/v1/like",videoRouterRouter);
+
 // app.use("/api/v1/tweets", tweetRouter)
 // app.use("/api/v1/subscriptions", subscriptionRouter)
 // app.use("/api/v1/videos", videoRouter)
@@ -43,4 +50,4 @@ import likeRouter from "./src/routes/like.routes.js"
 
 // // http://localhost:8000/api/v1/users/register
 
-export { app }
+export { app };
