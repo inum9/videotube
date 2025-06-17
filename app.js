@@ -19,7 +19,7 @@ app.use(cookieParser());
  import route from "./src/routes/user.routes.js";
 import commentRouter from "./src/routes/comment.routes.js"
 import likeRouter from "./src/routes/like.routes.js"
-import subRouter from "../managment system/src/routes/subscriber.routes.js";
+import subRouter from "./src/routes/subscriber.routes.js"
 import playRouter from "./src/routes/playlist.orutes.js"
 import videoRouter from "./src/routes/video.routes.js";
 
