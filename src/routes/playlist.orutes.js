@@ -6,7 +6,7 @@ import { addVideoToPlaylist, createPlaylist,
     removeVideoFromPlaylist,
     updatePlaylist,
  } from '../controllers/playlist.controller.js';
-import {verifyJWT} from "../middlewares/auth.middleware.js"
+import {verifyJWT} from "../middleware/authorization.middleware.js"
 
 const router = Router();
 

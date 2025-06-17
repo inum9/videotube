@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { toggleSubscription,getSubscribedChannels,getUserChannelSubscribers } from '../controllers/subscription.controller.js';
-import {verifyJWT} from "../middlewares/auth.middleware.js"
+import {verifyJWT} from "../middleware/authorization.middleware.js"
 
 const router = Router();
 router.use(verifyJWT); // Apply verifyJWT middleware to all routes in this file
